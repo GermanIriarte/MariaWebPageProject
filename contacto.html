@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css"> <!-- Enlace a tu archivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+<body>
+
+    <!-- Encabezado superior con logo e información de contacto -->
+    <header class="top-header">
+        <div class="logo">
+            <img src="images/logoMaria.png" alt="Logo de la empresa">
+        </div>
+        <div class="contact-info">
+            <a href="mailto:abogada.maria.soltau@gmail.com"><i class="fas fa-envelope"></i> Correo</a>
+            <a href="tel:+3113078533"><i class="fas fa-phone"></i> Llamar</a>
+            <span><i class="fas fa-clock"></i> Lunes a Viernes 8:00am - 6:00pm</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/maria_soltau/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="image-container">
+        <img src="images/leyOrdenSymbols.png" alt="Imagen de contacto">
+        <div class="overlay-text">
+            <h1>Contacta a María</h1>
+        </div>
+    </div>
+    
+    <!-- Contenedor principal para la sección de contacto -->
+    <div class="contact-section">
+        
+        <!-- Sección de información a la izquierda -->
+        <div class="left-section">
+            <h2>¿Por qué contactarme?</h2>
+            <p>Con más de 15 años de experiencia en litigio, mi enfoque se centra en ofrecer soluciones legales efectivas y personalizadas en Derecho Constitucional, Derecho Laboral y Derecho de Familia. Estoy aquí para ayudarte a proteger tus derechos y brindarte el mejor asesoramiento legal.</p>
+
+            <!-- Iconos de contacto -->
+            <div class="contact-info-icons">
+                <!-- Fila 1 de iconos -->
+                <div class="icon-row">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Ubicación: Bogotá, Colombia</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>Teléfono: 311 3078533</p>
+                    </div>
+                </div>
+
+                <!-- Fila 2 de iconos -->
+                <div class="icon-row">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Correo: abogada.maria.soltau@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección del formulario a la derecha -->
+        <div class="right-section">
+            <h1>Escríbeme la razón principal de tu solicitud</h1>
+
+            <!-- Formulario de contacto -->
+            <form action="https://formspree.io/f/xeoqqdjz" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+
+            
+        </div>
+    </div>
+
+    <!-- Contenedor del mapa -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.9302680496003!2d-76.54304122526871!3d3.367222296607463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a153ea4270cd%3A0x3b3a92af1fdd7a94!2sSendero%20Del%20Polo%20Club!5e0!3m2!1sen!2sco!4v1729189471425!5m2!1sen!2sco" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    
+    <footer class="footer-container">
+        <div class="footer-column">
+          <h3>Enlaces</h3>
+          <ul>
+            <li><a href="#">Especialistas</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Políticas</h3>
+          <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Descargo de responsabilidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-column">
+          <h3>Consulta con especialista</h3>
+          <p><i class="fas fa-phone"></i> 311 307 8533</p>
+          <p><i class="fas fa-envelope"></i> info@mariaabogada.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Cali, Colombia</p>
+          <p><i class="fas fa-clock"></i> Lunes a Viernes 9:00am - 06:00pm</p>
+        </div>
+      </footer>
+
+      <footer class="end-line">
+        <!-- Otros contenidos del pie de página aquí -->
+        <hr class="divider">
+        <p>Copyright © 2024 María Antonia Sóltau Amaya Todos los derechos reservados. <a href="#">Germán Iriarte web</a></p>
+    </footer>
+      
+
+    <div class="whatsapp-button">
+        <a href="javascript:void(0)" onclick="toggleChat()">
+            <img src="images/whatsappiconpng.png" alt="WhatsApp">
+        </a>
+    </div>
+    
+    <!-- Contenedor del chat desplegable -->
+    <div id="whatsapp-chat" class="chat-container">
+        <div class="chat-header">
+            <span>Contacta a María</span>
+            <button class="close-btn" onclick="toggleChat()">×</button>
+        </div>
+        <div class="chat-body">
+            <p>¡Hola! Haz clic en el botón de abajo para iniciar una conversación en WhatsApp.</p>
+            <a href="https://wa.me/3113078533?text=Hola,%20tengo%20una%20consulta!" target="_blank" class="chat-start-btn">Iniciar Chat</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleChat() {
+            var chatBox = document.getElementById("whatsapp-chat");
+            if (chatBox.style.display === "none" || chatBox.style.display === "") {
+                chatBox.style.display = "block"; // Mostrar el chat
+            } else {
+                chatBox.style.display = "none";  // Ocultar el chat
+            }
+        }
+        </script>
+        
+    
+    
+
+</body>
+</html>

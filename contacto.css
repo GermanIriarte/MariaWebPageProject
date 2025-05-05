@@ -1,0 +1,394 @@
+/* Encabezado superior con logo e información */
+body {
+    background-image: url('images/fondoContacto.png'); /* Ruta a la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a; /* Negro elegante para el encabezado */
+    padding: 10px 30px;
+    border-bottom: 1px solid #d9d9d9; /* Gris claro para la línea divisoria */
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    position: relative;
+    width: 100%; /* Se ajusta al ancho completo de la sección */
+    width: 1500px;
+    text-align: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 20px; /* Espacio entre la imagen y el contenido */
+    margin-top: 0   px; /* Ajusta este valor para disminuir el espacio superior */
+    margin-bottom: 10px;
+    
+}
+
+.image-container img {
+    max-width: 100%; /* La imagen no se desbordará del contenedor */
+    width: 2000px;
+    height: 400px; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para darle un aspecto elegante */
+    margin-top: -40px; /* Ajusta este valor para disminuir el espacio superior */
+    margin-bottom: 50px;
+    filter: blur(4px); /* Difumina la imagen */
+    opacity: 0.8; /* Le da una ligera transparencia */
+
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste perfecto para centrar el texto */
+    color: #D4AF37; /* Color dorado elegante */
+    font-size: 36px; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Añade sombra para mejorar la legibilidad */
+    text-align: center;
+}
+
+/* El resto del CSS permanece igual */
+
+
+.logo img {
+    height: 50px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info a, .contact-info span {
+    color: #f2f2f2; /* Blanco roto para el texto de contacto */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+    color: #D4AF37; /* Dorado para los íconos */
+}
+
+/* Añade espacio en el cuerpo para compensar el encabezado fijo */
+body {
+    margin-top: 100px;
+    background-color: #404040; /* Gris oscuro para el fondo */
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal para la página de contacto */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* Sección de información a la izquierda */
+.left-section {
+    flex: 1;
+    background-color: #9BA7AE ; /* Gris medio para el fondo de la sección de información */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.left-section h2 {
+    margin-top: 20px;
+    color: #D4AF37; /* Dorado para el título */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+
+}
+
+.left-section p {
+    margin-bottom: 30px;
+    color: #FFFFFF; /* Blanco roto para el texto */
+    
+}
+
+/* Contenedor de los íconos */
+.contact-info-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos para los íconos */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item i {
+    font-size: 20px;
+    color: #C8A200; /* Dorado para los íconos */
+    font-size: 30px;
+    gap: 10px;
+}
+
+.contact-item p {
+    color: #f2f2f2; /* Blanco roto para el texto de los íconos */
+}
+
+/* Sección del formulario a la derecha */
+.right-section {
+    flex: 1;
+    background-color: #606060; /* Gris oscuro suave para el fondo del formulario */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.right-section h1 {
+    color: #D4AF37; /* Dorado para el título del formulario */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+form label {
+    color: #f2f2f2; /* Blanco roto para las etiquetas */
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d9d9d9; /* Gris claro para los bordes de los campos */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #2C2C2C; /* Gris oscuro para el texto dentro de los campos */
+    background-color: #f2f2f2; /* Blanco roto para el fondo de los campos */
+}
+
+/* Botón de envío */
+form input[type="submit"] {
+    background-color: #D4AF37; /* Dorado para el botón */
+    color: #1a1a1a; /* Negro para el texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #f0c850; /* Un dorado más claro en hover */
+    transform: scale(1.02);    /* Ligero aumento en el tamaño */
+}
+
+.map-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 2px solid red;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.footer-container {
+    color: #D4AF37; /* Dorado para el título */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    background-color: #4D4D4D; /* Un color rojo oscuro elegante */
+    padding: 40px;
+    color: #fff; /* Texto en blanco para contraste */
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h3 {
+    color: #D4AF37; /* Color dorado */
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #D4AF37; /* Cambia a dorado al pasar el cursor */
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+}
+
+.footer-column i {
+    color: #D4AF37; /* Color dorado para los íconos */
+    margin-right: 10px;
+}
+
+/* Estilos para el pie de página en general */
+.footer-container p {
+    font-size: 14px;
+}
+
+/* Redes sociales si decides agregarlas */
+.social-icons a {
+    color: #D4AF37;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #D4AF37; /* Dorado, similar al de la imagen */
+    margin: 20px 0; /* Ajusta los márgenes superior e inferior */
+}
+.end-line p {
+    text-align: center;
+
+}
+
+.end-line a {
+    color: #D4AF37;
+
+}
+
+/* Estilos del botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos del chat desplegable */
+.chat-container {
+    position: fixed;
+    bottom: 90px; /* Posicionado encima del botón de WhatsApp */
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: none; /* Oculto por defecto */
+    z-index: 1001;
+}
+
+.chat-header {
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header span {
+    font-weight: bold;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chat-body {
+    padding: 10px;
+}
+
+.chat-body p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.chat-start-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.chat-start-btn:hover {
+    background-color: #128C7E; /* Oscurecer el color en hover */
+}
+/* Spinner - Animación de carga */
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db; /* Color principal del spinner */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    display: none; /* Oculto por defecto */
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

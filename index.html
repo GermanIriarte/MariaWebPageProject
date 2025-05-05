@@ -1,0 +1,155 @@
+<!DOCTYPE html> <!-- indica que utilizaremos html -->
+<html lang="es"> <!-- Define el idioma principal de la pagina-->
+<head> <!--head es para especificar metadatos-->
+    <meta charset="UTF-8"> <!-- define el manejo de caracteres especiales como la ñ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>María Sóltau abogada</title> <!--itiulo que aparecera en la pestaña del navegador-->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS que define los estilos visuales de la página.-->
+    <!-- Cargar FontAwesome para los íconos -->
+    <link rel="stylesheet" href="stylesSec2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  <!--Importa la librería FontAwesome, que se usa para los íconos (como el de correo o teléfono).-->
+
+
+</head>
+<body>
+
+    <!-- Encabezado superior con logo e información de contacto -->
+    <header class="top-header"> <!--definimos un clase que sera estilizada en css: header refiere al encabezado de la pagina, aqui si especificamos que sera a diferencia de un div-->
+        <div class="logo">
+            <img src="images/logoMaria.png" alt="Logo de la empresa">
+        </div>
+        <div class="contact-info"> <!--los div son bloques-->
+            <a href="mailto:abogada.maria.soltau@gmail.com"><i class="fas fa-envelope"></i> Correo</a>
+            <a href="tel:+3113078533"><i class="fas fa-phone"></i> Llamar</a>
+            <span><i class="fas fa-clock"></i> Lunes a Viernes 8:00am - 6:00pm</span> <!--span es para agregar un pequeño detalle sin interrumpir el flujo-->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a> <!--la idea es que el numeral sea reemplazo por un url-->
+                <a href="https://www.instagram.com/maria_soltau/"><i class="fab fa-instagram"></i></a> <!--la i es letra cursiva pero tambien siorve para insertar iconos-->
+                <a href="#"><i class="fab fa-twitter"></i></a> <!--fab fa es una clase proporcionada por fontawesome.-->
+                <a href="#"><i class="fab fa-linkedin"></i></a> <!--a es la etiqueta que crea un enlace y href especifica el enlace.-->
+            </div>
+        </div>
+    </header>
+
+    <!-- Línea divisoria -->
+    <hr>
+
+    <!-- Menú de navegación principal -->
+    <nav class="main-nav">
+        <ul> <!--unordered list-->
+            <li><a href="#oficina">Oficina</a></li> <!--li es listItem-->
+            <li><a href="#especialistas">Especialistas</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#" class="search-icon" title="Buscar"><i class="fas fa-search"></i></a></li> <!--aqui se le asocia un titulo que le permitira al suaurio ver cuando se pare encima del icono de lupa-->
+        </ul>
+    </nav> <!--solo para claridad semantica, realmente podria poner div y funcionalmente la pagina queria perfecta. pero ojo, tiene algunos beneficios adicionales un poco lejanos al proyecto-->
+
+    <section class="hero-section" id="hero">
+        <div class="overlay">
+            <h1>María Sóltau</h1>
+            <p>Abogada Especializada en Derecho Constitucional, Laboral y Familia.
+            Con más de 15 años de experiencia en litigio, me he consolidado como un experto en la defensa y 
+            protección de los derechos fundamentales de mis clientes.</p>
+            <a href="contacto.html" class="cta-button">COMENZAR</a>
+        </div>
+    </section>
+    
+    <div class="quote-box">
+        <h2>Abogada Penalista</h2>
+        <p>"La injusticia en cualquier parte es una amenaza a la justicia en todas partes." — Martin Luther King Jr.</p>
+    </div>
+    
+    <script>
+        let backgrounds = [
+            'url("images/cali.png")',
+            'url("images/saul.png")',
+            'url("images/imagenAbogacia.png")'
+        ];
+    
+        let currentSlide = 0;
+    
+        function changeSlideAutomatically() {
+            currentSlide++;
+    
+            if (currentSlide >= backgrounds.length) {
+                currentSlide = 0;
+            }
+    
+            document.getElementById('hero').style.backgroundImage = backgrounds[currentSlide];
+        }
+    
+        // Inicializar el fondo
+        document.getElementById('hero').style.backgroundImage = backgrounds[0];
+    
+        // Cambiar la imagen cada 5 segundos (5000 milisegundos)
+        setInterval(changeSlideAutomatically, 10000 );
+    </script>
+    
+
+<section class="image-text-section">
+    <div class="image-container">
+        <img src="/images/saul.png" alt="Descripción de la imagen">
+    </div>
+    <div class="text-container">
+        <div class="info-box">
+
+        <h2>¿Quién soy?</h2>
+        <p>Con más de 15 años de experiencia en litigio, me he consolidado como un experto en la defensa y protección de los derechos fundamentales de mis clientes. Mi enfoque se centra en ofrecer soluciones efectivas y personalizadas en las áreas de:</p>
+        
+        <ul class="bullet-points">
+            <li>Derecho Constitucional</li>
+            <li>Derecho Laboral (Preventivo y Contencioso)</li>
+            <li>Derecho de Familia</li>
+        </ul>
+        
+        <p>Mi experiencia y conocimiento en estas áreas me permiten brindar asesoramiento y representación legal de alta calidad, garantizando la protección y defensa de los intereses de mis clientes.</p>
+</div>
+</section>
+
+
+<section class="service-section">
+  <h2>¿Por qué elegirme?</h2>
+  <p>En un entorno legal complejo y en constante evolución, contar con el abogado adecuado puede marcar la diferencia. Mi enfoque personalizado y mi compromiso con cada caso me permiten ofrecer soluciones efectivas y adaptadas a las necesidades únicas de cada cliente.</p>
+  
+  <div class="service-cards">
+    <div class="service-card">
+      <h3>01.Conocimiento y Dedicación</h3>
+      <p>Con más de 15 años de experiencia en el ámbito jurídico, mi compromiso es proporcionar asesoría legal basada en un conocimiento profundo y actualizado. Mi práctica profesional me permite ofrecer soluciones estratégicas que garantizan la protección de tus derechos..</p>
+    </div>
+    
+    <div class="service-card">
+      <h3>02. Vocación por la Justicia</h3>
+      <p>Mi pasión es defender los derechos de las personas con una firme convicción de justicia. Enfrento cada caso con dedicación, esforzándome por obtener resultados que generen un impacto positivo y duradero en la vida de mis clientes.</p>
+    </div>
+    
+    <div class="service-card">
+      <h3>03. Resultados Demostrados</h3>
+      <p>Mi enfoque está orientado a la obtención de resultados concretos, respaldado por una sólida trayectoria de casos exitosos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="symbol-container">
+            <img src="/images/justicia.png" alt="Simbolo de Justicia">
+        </div>
+        <h2>Contáctenos</h2>
+        <div class="contact-button">
+            <a href="contacto.html" class="cta-button">SOLICITAR AHORA</a>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,345 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fondo blanco por defecto */
+}
+
+/* Encabezado superior con logo e información */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; /* Fondo blanco */
+    padding: 10px 30px;
+}
+
+
+
+.logo img {
+    height: 95px; /* Ajusta el tamaño del logo según sea necesario */
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info a, .contact-info span {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+
+.contact-info i {
+    margin-right: 5px; /* Espacio entre los íconos y el texto */
+}
+
+.social-icons a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #900; /* Color hover de los íconos sociales */
+}
+
+/* Estilos de la línea divisoria */
+hr {
+    border: none;
+    border-top: 0px solid #e5e5e5; /* Línea fina y gris */
+    margin: 0;
+}
+
+/* Menú de navegación */
+.main-nav {
+    background-color: #D4AF37; /* Dorado elegante */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaciado entre los enlaces */
+}
+
+.main-nav li {
+    display: inline;
+}
+
+.main-nav a {
+    color: black    ;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Efecto hover con brillo */
+.main-nav a:hover {
+    color: white ; /* Color dorado */
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.8); /* Brillo difuso */
+}
+
+/* Estilo para la lupita de búsqueda */
+.search-icon {
+    font-size: 18px;
+    color: #900; /* Color para la lupa */
+}
+
+.search-icon:hover {
+    color: #D4AF37; /* Color dorado al pasar el cursor */
+}
+
+/* Estilo general para el body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Sección de la imagen de fondo */
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura semitransparente */
+    z-index: 1; /* Hace que la capa esté entre la imagen y el texto */
+}
+.hero-section h1{
+    position: relative;
+    z-index: 2; /* El texto estará por encima de la capa semitransparente */
+    color: #f3c613; /* Color dorado para el texto */
+
+
+}
+
+
+.hero-section p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-bottom: 50px; /* Añade un margen inferior para separar del botón */
+}
+.hero-section .cta-button{
+    background-color: #b8860b;
+}
+
+
+
+.hero-section.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+/* Ajustamos el before para que no interfiera con el contenido */
+
+.overlay {
+    position: relative; /* El contenido debe estar por encima del pseudo-elemento */
+    z-index: 2; /* Asegura que esté sobre el overlay oscuro */
+    color: white;
+    max-width: 800px; /* Limitar el ancho del contenido */
+    padding: 20px;
+    text-align: center; /* Centrar el texto dentro del overlay */
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #f3c613; /* Color amarillo brillante */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #D4AF37; /* Color dorado en hover */
+}
+
+h1 {.hero-section {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura semitransparente */
+    z-index: 1; /* Hace que la capa esté entre la imagen y el texto */
+}
+
+.hero-section h1, .hero-section p, .cta-button {
+    position: relative;
+    z-index: 2; /* El texto estará por encima de la capa semitransparente */
+    color: #FFD700; /* Color dorado para el texto */
+}
+
+
+    font-size: 60px; /* Aumenta el tamaño del texto */
+    color: #D4AF37;  /* Color dorado para que resalte */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Sombra negra con un difuminado suave */
+    font-weight: bold;
+    letter-spacing: 2px; /* Espaciado entre letras para darle un aspecto más elegante */h2 {
+    font-size: 36px; /* Aumenta el tamaño del texto */
+    color: #FFD700; /* Un dorado más brillante */
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7); /* Sombra negra suave */
+    font-weight: bold;
+    letter-spacing: 1px; /* Espacio entre letras */
+}
+}
+
+p {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+
+.quote-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    text-align: center;
+    color: #D4AF37; /* Color dorado */
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto; /* Centra el rectángulo horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    clear: both; /* Evita que quede flotando al lado del contenido anterior */
+    font-size: 60px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
+}
+
+
+.quote-box h2 {
+    font-size: 36px; /* Aumenta el tamaño del texto */
+    color: #FFD700; /* Un dorado más brillante */
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7); /* Sombra negra suave */
+    font-weight: bold;
+    letter-spacing: 1px; /* Espacio entre letras */
+}
+
+.quote-box p {
+    font-style: italic; /* Cursiva para darle un estilo más elegante */
+    font-size: 18px; /* Tamaño más grande para que sea más legible */
+    color: #FFFFFF; /* Blanco o casi blanco para resaltar sobre el fondo oscuro */
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Sombra ligera para hacer que destaque más */
+
+}.quote-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    text-align: center;
+    color: #D4AF37; /* Color dorado */
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto; /* Centra el rectángulo horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 60px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+/* Estilos generales para el contenedor de texto e imagen */
+.image-text-section {
+    display: flex;
+    justify-content: space-between; /* Distribuye la imagen y el texto */
+    align-items: center; /* Alinea verticalmente al centro */
+    padding: 40px;
+    background-color: #4D4D4D; /* Fondo gris oscuro para la sección */
+    border-radius: 8px;
+}
+
+
+.text-container {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.info-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    color: #FFFFFF; /* Texto en blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+/* Estilos para el título */
+.info-box h2 {
+    font-size: 36px;
+    color: #D4AF37; /* Color dorado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el título */
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el párrafo */
+.info-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra ligera para el texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Estilos para los puntos */
+.bullet-points {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #FFD700; /* Color dorado para los puntos */
+}
+
+.bullet-points li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #f2f2f2; /* Blanco roto para el texto de los puntos */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animación para el título */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFAA00;
+    }
+    to {
+        text-shadow: 0 0 20px #FFD700, 0 0 30px #FFAA00, 0 0 40px #FFD700;
+    }
+}
+
+.info-box h2:hover {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
