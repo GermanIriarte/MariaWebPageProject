@@ -10,6 +10,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+form input,
+form textarea,
+form {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
 .top-header {
     display: flex;
     justify-content: space-between;
@@ -155,7 +163,7 @@ body {
 .right-section {
     flex: 1;
     background-color: #606060; /* Gris oscuro suave para el fondo del formulario */
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
 }
 
@@ -170,6 +178,7 @@ form label {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
+    padding-right: 10px;
 }
 
 form input[type="text"],
@@ -388,7 +397,102 @@ form input[type="submit"]:hover {
     transform: translate(-50%, -50%);
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+@media (max-width: 768px) {
+    /* Encabezado */
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1a1a1a; /* Negro elegante para el encabezado */
+        padding: 10px 30px;
+        border-bottom: 1px solid #d9d9d9; /* Gris claro para la línea divisoria */
+        width: 100%;
+        box-sizing: border-box;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    
+    .logo img {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+  
+    .contact-info {
+      display: flex;
+      flex-direction: row; /* Para que no se apilen */
+      flex-wrap: wrap;     /* Permite que bajen si no caben */
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .horario {
+      display: none;
+    }
+  
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+  
+    /* Contenedor de la imagen */
+    .image-container {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  
+    .overlay-text {
+      font-size: 24px;
+      padding: 10px;
+    }
+  
+    /* Sección de contacto */
+    .contact-section {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+      justify-content: center;
+    }
+  
+    .left-section{
+        display: none;
+    }
+    .right-section {
+      box-sizing: border-box;
+      width: 80%;
+      padding: 15px;
+    }
+  
+    /* Footer */
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .footer-column {
+      margin-right: 0;
+    }
+  
+    /* Mapa */
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+    }
+  
+    /* Chat */
+    .chat-container {
+      width: 90%;
+      right: 5%;
+    }
+    
+  }
+  

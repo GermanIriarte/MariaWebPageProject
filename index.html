@@ -16,12 +16,14 @@
     <!-- Encabezado superior con logo e información de contacto -->
     <header class="top-header"> <!--definimos un clase que sera estilizada en css: header refiere al encabezado de la pagina, aqui si especificamos que sera a diferencia de un div-->
         <div class="logo">
-            <img src="images/logoMaria.png" alt="Logo de la empresa">
+            <img src="images/logo.png" alt="Logo de la empresa">
         </div>
         <div class="contact-info"> <!--los div son bloques-->
             <a href="mailto:abogada.maria.soltau@gmail.com"><i class="fas fa-envelope"></i> Correo</a>
             <a href="tel:+3113078533"><i class="fas fa-phone"></i> Llamar</a>
-            <span><i class="fas fa-clock"></i> Lunes a Viernes 8:00am - 6:00pm</span> <!--span es para agregar un pequeño detalle sin interrumpir el flujo-->
+            <span class="horario"><i class="fas fa-clock"></i> Lunes a Viernes 8:00am - 6:00pm</span>
+
+
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook"></i></a> <!--la idea es que el numeral sea reemplazo por un url-->
                 <a href="https://www.instagram.com/maria_soltau/"><i class="fab fa-instagram"></i></a> <!--la i es letra cursiva pero tambien siorve para insertar iconos-->
@@ -36,15 +38,14 @@
 
     <!-- Menú de navegación principal -->
     <nav class="main-nav">
-        <ul> <!--unordered list-->
-            <li><a href="#oficina">Oficina</a></li> <!--li es listItem-->
-            <li><a href="#especialistas">Especialistas</a></li>
-            <li><a href="#noticias">Noticias</a></li>
-            <li><a href="#faq">Preguntas Frecuentes</a></li>
+        <ul>
+            <li><a href="#oficina">Oficina</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="#" class="search-icon" title="Buscar"><i class="fas fa-search"></i></a></li> <!--aqui se le asocia un titulo que le permitira al suaurio ver cuando se pare encima del icono de lupa-->
+            <li><a href="#" >Quien Soy</a></li>
+            <li><a href="#" class="search-icon" title="Buscar"><i class="fas fa-search"></i></a></li>
+
         </ul>
-    </nav> <!--solo para claridad semantica, realmente podria poner div y funcionalmente la pagina queria perfecta. pero ojo, tiene algunos beneficios adicionales un poco lejanos al proyecto-->
+    </nav>
 
     <section class="hero-section" id="hero">
         <div class="overlay">
@@ -64,8 +65,8 @@
     <script>
         let backgrounds = [
             'url("images/cali.png")',
-            'url("images/saul.png")',
-            'url("images/imagenAbogacia.png")'
+            'url("images/justicia.png")',
+            'url("images/logo.png")'
         ];
     
         let currentSlide = 0;
@@ -90,7 +91,7 @@
 
 <section class="image-text-section">
     <div class="image-container">
-        <img src="/images/saul.png" alt="Descripción de la imagen">
+        <img src="images/Maria.png" alt="Descripción de la imagen">
     </div>
     <div class="text-container">
         <div class="info-box">
@@ -134,7 +135,7 @@
 <section class="contact-section">
     <div class="container">
         <div class="symbol-container">
-            <img src="/images/justicia.png" alt="Simbolo de Justicia">
+            <img src="images/justicia.png" alt="Simbolo de Justicia">
         </div>
         <h2>Contáctenos</h2>
         <div class="contact-button">
